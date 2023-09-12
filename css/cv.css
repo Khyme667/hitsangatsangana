@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+    position: relative;
+    left: -1px;
+    top: 73px;
+    box-shadow: 0PX 9PX 22PX 4PX;
+    display: inherit;
+}
+
+.wrapper .static-txt {
+    color: black;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: red;
+    font-size: 40px;
+    font-weight: 500;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li {
+    position: relative;
+    top: -13px;
+    right: 36px;
+}
+
+.dynamic-txts li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c6c3c4;
+    border-left: 2px solid red;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30%);
+    }
+
+    100% {
+        left: 0;
+    }
+}

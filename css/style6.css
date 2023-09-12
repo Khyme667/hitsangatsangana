@@ -1,0 +1,23 @@
+marquee h1,
+marquee h2 {
+    font-size: 90px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(img/PicsArt_12-05-06.42.25.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+
+    }
+}
+.img-fluid:hover{
+    box-shadow: 2px 2px 2px 2px white;
+
+}

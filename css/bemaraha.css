@@ -1,0 +1,27 @@
+h2, h1 {
+    font-size: 90px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(Tritriva/img/Lac_Tritriva.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 10s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+
+    }
+}
+
+#img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('img/Baobab/Tsingy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 700px;
+    /* background-color: red;    */
+}
